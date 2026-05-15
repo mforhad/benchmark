@@ -64,5 +64,12 @@ public class Workload {
 
     public int testDurationMinutes;
 
+    /**
+     * Maximum number of records to produce before stopping the benchmark. If <= 0, the benchmark
+     * will be governed by time (testDurationMinutes). This allows limiting the run by message
+     * count instead of time.
+     */
+    public long testProduceMaxRecord = 0;
+
     public int warmupDurationMinutes = 1;
 }

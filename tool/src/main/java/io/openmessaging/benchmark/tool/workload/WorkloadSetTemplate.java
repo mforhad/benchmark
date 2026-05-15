@@ -52,4 +52,6 @@ public class WorkloadSetTemplate {
     public long consumerBacklogSizeGB = 0;
     public int testDurationMinutes = 5;
     public int warmupDurationMinutes = 1;
+    /** Maximum number of records to produce before stopping the benchmark. If <= 0, time is used. */
+    public long testProduceMaxRecord = 0;
 }

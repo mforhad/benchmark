@@ -44,6 +44,7 @@ class WorkloadGenerator {
         workload.randomBytesRatio = template.randomBytesRatio;
         workload.randomizedPayloadPoolSize = template.randomizedPayloadPoolSize;
         workload.consumerBacklogSizeGB = template.consumerBacklogSizeGB;
+        workload.testProduceMaxRecord = template.testProduceMaxRecord;
         workload.testDurationMinutes = template.testDurationMinutes;
         workload.warmupDurationMinutes = template.warmupDurationMinutes;
         workload.useRandomizedPayloads = template.useRandomizedPayloads;
@@ -82,6 +83,7 @@ class WorkloadGenerator {
         copy.randomBytesRatio = workload.randomBytesRatio;
         copy.randomizedPayloadPoolSize = workload.randomizedPayloadPoolSize;
         copy.consumerBacklogSizeGB = workload.consumerBacklogSizeGB;
+        copy.testProduceMaxRecord = workload.testProduceMaxRecord;
         copy.testDurationMinutes = workload.testDurationMinutes;
         copy.warmupDurationMinutes = workload.warmupDurationMinutes;
         copy.topics = workload.topics;
